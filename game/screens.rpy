@@ -182,6 +182,17 @@ screen input(prompt):
             text prompt style "input_prompt"
             input id "input"
 
+screen inputCenter:
+
+    window:
+
+        style "nvl_window"
+        
+        text prompt xalign 0.5 yalign 0.4
+        input id "input" xalign 0.5 yalign 0.5
+
+  #  use quick_menu
+
 style input_prompt is default
 
 style input_prompt:
@@ -260,7 +271,7 @@ screen quick_menu():
 init python:
     config.overlay_screens.append("quick_menu")
 
-default quick_menu = True
+default quick_menu = False
 
 style quick_button is default
 style quick_button_text is button_text
