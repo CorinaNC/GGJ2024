@@ -8,7 +8,7 @@ init python:
             self.affection = affection
             
 define n = Char(Character(None, what_italic=True), [povname])
-define Me = Char(Character("Me", color="#009991"), "Cam")
+define Me = Char(Character("Me", color="#00fff2"), "Cam")
 define Student = Char(Character("Melonie", color="#e41b97"), "Melonie", 0)
 define Bill = Char(Character("William 'Bill' Ceriph", color="ffc000"), "Bill", 0)
 define Eve = Char(Character("Eve", color="#c719f8"), "Eve", 0)

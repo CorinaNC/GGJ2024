@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Untitled VN")
+define config.name = _("Work in Progress")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -219,4 +219,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-define build.itch_project = "renpytom/the-question"
+define build.itch_project = "CorinaNC/WorkInProgress"

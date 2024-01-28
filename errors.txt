@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/2day2_scene2.rpy", line 4: expected statement.
-    sound play rollingd
-                       ^
+File "game/screens.rpy", line 307: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sun Jan 28 03:19:20 2024
+Sun Jan 28 13:38:19 2024
