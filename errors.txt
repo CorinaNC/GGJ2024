@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 307: Indentation mismatch.
+File "game/1day1_scene1.rpy", line 16: expected simple expression
+    stop music fadeout
+                      ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sun Jan 28 13:38:19 2024
+Sun Jan 28 15:41:32 2024

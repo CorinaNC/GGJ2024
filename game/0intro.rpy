@@ -3,6 +3,10 @@ define fifthFaveColor = ''
 
 label start:    
 
+    scene black
+    with flash
+    play music ambience
+
     centered "> Work In Progress presents itself as an experience, both in name and meaning."  
     centered "> The endless timeline that makes up being human holds shelter to an infinite amount of stories."  
     centered "> Our tragedies, our comedies, the mundane and the epic; no matter how they are divided or labeled,"

@@ -1,5 +1,13 @@
+init:
+    $ flash = Fade(.25, 0, .75, color="#fff")
+
 label credits:
+    play sound flash
+    play music ambience
+    with fade
     scene black
+    with flash
+    
     centered "> {cps=15}{color=#FF0000}And that's the end of the demo.{/color}{/cps}"
     centered "> {cps=15}{color=#FF0000}Thank you for reading.{/color}{/cps}"
     centered "> {cps=15}{color=#FF0000}Made for Global Game Jam 2024.{/color}{/cps}"
@@ -24,6 +32,6 @@ label credits:
 
     $ renpy.pause(4.0)
 
-    show text "Sound Effects\n\nPixabay" with dissolve
+    show text "Sound Effects & Additional Music by\n\nPixabay" with dissolve
 
     $ renpy.pause(4.0)

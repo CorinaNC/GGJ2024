@@ -1,72 +1,43 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/2day2_scene2.rpy", line 340, in script
-    Bill.c "NOW I WON’T HAVE TO GO BACK TO INTRODUCTION TO CREATIVE WRITING!"
-TypeError: Value <renpy.display.transform.ATLTransform object (None, ('renpy/common/00definitions.rpy', 42)) at 0x0000000004c11f70> of type <class 'renpy.display.transform.ATLTransform'> not recognized as a position.
+While processing the idle_color property of style choice_button_text:
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+Exception: Color string '#' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/2day2_scene2.rpy", line 340, in script
-    Bill.c "NOW I WON’T HAVE TO GO BACK TO INTRODUCTION TO CREATIVE WRITING!"
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\character.py", line 1391, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\character.py", line 1042, in do_display
-    display_say(who,
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\character.py", line 738, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\core.py", line 2814, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\core.py", line 1352, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 486, in renpy.display.render.render_screen
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\screen.py", line 754, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 1361, in render
-    surf = render(child,
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 260, in renpy.display.render.render
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 913, in render
-    offset = child.place(rv, 0, 0, width, height, surf)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\displayable.py", line 490, in place
-    xpos, ypos = place(width, height, surf.width, surf.height, placement)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\displayable.py", line 61, in place
-    xpos = compute_raw(xpos, width)
-  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\core.py", line 226, in compute_raw
-    raise TypeError("Value {} of type {} not recognized as a position.".format(value, type(value)))
-TypeError: Value <renpy.display.transform.ATLTransform object (None, ('renpy/common/00definitions.rpy', 42)) at 0x0000000004c11f70> of type <class 'renpy.display.transform.ATLTransform'> not recognized as a position.
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/main.py", line 635, in main
+    run(restart)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/main.py", line 75, in run
+    renpy.translation.init_translation()
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/translation/__init__.py", line 664, in init_translation
+    renpy.store._init_language() # type: ignore
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/translation/__init__.py", line 763, in change_language
+    i()
+  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
+    __update()
+  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
+    renpy.style.rebuild()
+  File "style.pyx", line 803, in renpy.style.rebuild
+  File "style.pyx", line 796, in renpy.style.build_styles
+  File "style.pyx", line 717, in renpy.style.build_style
+  File "style.pyx", line 714, in renpy.style.build_style
+  File "gen3-static/style_idle_functions.pyx", line 227, in style_idle_functions.idle_color_property
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/color.py", line 159, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string '#' must be 3, 4, 6, or 8 hex digits long.
 
-Windows-10-10.0.22621 AMD64
+Linux-6.5.9-arch2-1-x86_64-with-glibc2.38 x86_64
 Ren'Py 8.2.0.24012702
 Work in Progress 7.0
-Sun Jan 28 14:33:37 2024
+Sun Jan 28 15:25:28 2024

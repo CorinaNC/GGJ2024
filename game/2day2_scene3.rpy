@@ -1,4 +1,4 @@
-
+$ flash = Fade(0.5, 0, 0.5, color="#FFFFFF")
 
 label scene2_3:
     scene dormRoom
@@ -150,6 +150,8 @@ label scene2_3:
     Me.c "..?"
 
     show Eve confused
+
+    stop music fadeout 4
 
     Eve.c "Uh, what's your actual name?"
 

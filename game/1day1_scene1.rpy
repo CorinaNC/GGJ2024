@@ -12,6 +12,7 @@
 
 label scene1Intro:
     scene black
+    stop music fadeout 1
     centered "{cps=20}> Day 1.{/cps}"  
     pause(1)
     jump scene1_1
@@ -21,6 +22,7 @@ label scene1_1:
     play sound phoneVibrate
 
     n.c "Bzzzt.. Bzzt."
+    with vpunch
 
     n.c "There was an annoying ringing in my ear."
 
