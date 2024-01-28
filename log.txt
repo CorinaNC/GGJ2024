@@ -1,19 +1,19 @@
-2024-01-28 21:25:36 UTC
+2024-01-28 21:44:25 UTC
 Linux-6.5.9-arch2-1-x86_64-with-glibc2.38
 Ren'Py 8.2.0.24012702
 
 Early init took 0.06s
 Loading error handling took 0.04s
-Loading script took 0.39s
+Loading script took 0.41s
 Loading save slot metadata took 0.05s
 Loading persistent took 0.00s
-Running init code took 0.09s
+Running init code took 0.10s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.07s
+Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.04s
@@ -25,11 +25,11 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.08s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.14s
+Interface start took 0.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -41,585 +41,16 @@ Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Traceback (most recent call last):
-  File "renpy/common/00console.rpy", line 695, in run
-    he.result = command_fn(l)
-  File "renpy/common/00console.rpy", line 1021, in jump
-    raise Exception("Could not parse label. (Unqualified local labels are not allowed.)")
-Exception: Could not parse label. (Unqualified local labels are not allowed.)
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Resetting cache.
-Early init took 408.42s
+Early init took 18.90s
 Loading error handling took 0.04s
-Loading script took 0.21s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 449.03s
-Loading error handling took 0.02s
-Loading script took 0.18s
+Loading script took 0.15s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
 
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 453.93s
-Loading error handling took 0.03s
-Loading script took 0.41s
-Loading save slot metadata took 0.06s
-Loading persistent took 0.00s
-Running init code took 0.09s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 476.93s
-Loading error handling took 0.03s
-Loading script took 0.20s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Traceback (most recent call last):
-  File "renpy/common/00console.rpy", line 695, in run
-    he.result = command_fn(l)
-  File "renpy/common/00console.rpy", line 1024, in jump
-    raise Exception("Ren'Py script not enabled. Not jumping.")
-Exception: Ren'Py script not enabled. Not jumping.
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 615.21s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.10s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 630.58s
-Loading error handling took 0.02s
-Loading script took 0.17s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 810.92s
-Loading error handling took 0.03s
-Loading script took 0.21s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 815.66s
-Loading error handling took 0.02s
-Loading script took 0.19s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 836.32s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 851.91s
-Loading error handling took 0.03s
-Loading script took 0.18s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 858.52s
-Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.09s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 877.17s
-Loading error handling took 0.02s
-Loading script took 0.19s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/credits.rpy", line 6: play requires a file
-    play music 
-               ^
-DPI scale factor: 1.000000
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 880.34s
-Loading error handling took 0.02s
-Loading script took 0.17s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.09s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 883.52s
-Loading error handling took 0.02s
-Loading script took 0.17s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/credits.rpy", line 7: end of line expected.
-    with fade 2
-              ^
+File "game/credits.rpy", line 2: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        $ flash = Fade(.25, 0, .75, color="#ff0000"09")
 DPI scale factor: 1.000000
 Interface start took 0.10s
 
@@ -634,127 +65,25 @@ Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 888.20s
-Loading error handling took 0.02s
-Loading script took 0.17s
+Early init took 25.10s
+Loading error handling took 0.04s
+Loading script took 0.25s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
+Running init code took 0.09s
+Loading analysis data took 0.03s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 948.92s
-Loading error handling took 0.03s
-Loading script took 0.25s
-Loading save slot metadata took 0.07s
-Loading persistent took 0.00s
-Running init code took 0.10s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
 Dump and make backups took 0.08s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.05s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 955.63s
-Loading error handling took 0.02s
-Loading script took 0.19s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/1day1_scene1.rpy", line 16: expected simple expression
-    stop music fadeout
-                      ^
-DPI scale factor: 1.000000
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 960.30s
-Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.09s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
@@ -775,53 +104,6 @@ Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
 Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 963.62s
-Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
-Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.06s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
@@ -830,12 +112,12 @@ Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
 Resetting cache.
-Early init took 993.79s
+Early init took 35.04s
 Loading error handling took 0.02s
 Loading script took 0.20s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.09s
+Running init code took 0.08s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
@@ -848,12 +130,12 @@ Initial gc took 0.07s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.06s
+Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.03s
-Prepare screens took 0.09s
+Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
@@ -870,7 +152,47 @@ Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1003.10s
+Early init took 39.84s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 41.72s
 Loading error handling took 0.02s
 Loading script took 0.18s
 Loading save slot metadata took 0.03s
@@ -916,10 +238,78 @@ Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+
+Full traceback:
+  File "game/0intro.rpy", line 7, in script
+    with flash
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2604, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2518, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/transition.py", line 243, in Fade
+    widget = renpy.display.image.Solid(color)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/imagelike.py", line 51, in __init__
+    self.color = renpy.easy.color(color)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/color.py", line 159, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string 'fffff' must be 3, 4, 6, or 8 hex digits long.
+
+While running game code:
+  File "game/0intro.rpy", line 7, in script
+    with flash
+Exception: Color string 'fffff' must be 3, 4, 6, or 8 hex digits long.
 Resetting cache.
-Early init took 1011.06s
-Loading error handling took 0.03s
-Loading script took 0.24s
+Early init took 51.59s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 54.99s
+Loading error handling took 0.02s
+Loading script took 0.16s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
 Running init code took 0.06s
@@ -934,12 +324,12 @@ Initial gc took 0.07s
 DPI scale factor: 1.000000
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.06s
 Build styles took 0.00s
 Load screen analysis took 0.04s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.09s
+Prepare screens took 0.10s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -958,7 +348,108 @@ Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 71.45s
+Loading error handling took 0.02s
+Loading script took 0.18s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 74.73s
+Loading error handling took 0.03s
+Loading script took 0.25s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to '/home/corinac/.renpy/backups/GGJ2024':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.000000
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Mesa Intel(R) UHD Graphics 620 (KBL GT2)'
+Version: b'4.6 (Compatibility Profile) Mesa 23.2.1-arch1.2'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(974, 548) drawable=(974, 548)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
 Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s

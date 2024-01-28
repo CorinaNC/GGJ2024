@@ -1,43 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing the idle_color property of style choice_button_text:
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-Exception: Color string '#' must be 3, 4, 6, or 8 hex digits long.
+While running game code:
+  File "game/0intro.rpy", line 7, in script
+    with flash
+Exception: Color string 'fffff' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/main.py", line 635, in main
-    run(restart)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/main.py", line 75, in run
-    renpy.translation.init_translation()
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/translation/__init__.py", line 664, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/translation/__init__.py", line 763, in change_language
-    i()
-  File "renpy/common/00stylepreferences.rpy", line 124, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 96, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-  File "style.pyx", line 803, in renpy.style.rebuild
-  File "style.pyx", line 796, in renpy.style.build_styles
-  File "style.pyx", line 717, in renpy.style.build_style
-  File "style.pyx", line 714, in renpy.style.build_style
-  File "gen3-static/style_idle_functions.pyx", line 227, in style_idle_functions.idle_color_property
+  File "game/0intro.rpy", line 7, in script
+    with flash
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2604, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2518, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/transition.py", line 243, in Fade
+    widget = renpy.display.image.Solid(color)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/imagelike.py", line 51, in __init__
+    self.color = renpy.easy.color(color)
   File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/color.py", line 159, in __new__
     raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
-Exception: Color string '#' must be 3, 4, 6, or 8 hex digits long.
+Exception: Color string 'fffff' must be 3, 4, 6, or 8 hex digits long.
 
 Linux-6.5.9-arch2-1-x86_64-with-glibc2.38 x86_64
 Ren'Py 8.2.0.24012702
 Work in Progress 7.0
-Sun Jan 28 15:25:28 2024
+Sun Jan 28 15:45:11 2024

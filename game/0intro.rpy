@@ -2,7 +2,7 @@ define povname = ''
 define fifthFaveColor = ''
 
 label start:    
-
+    play sound flash
     scene black
     with flash
     play music ambience

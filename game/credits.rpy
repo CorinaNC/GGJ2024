@@ -1,5 +1,5 @@
 init:
-    $ flash = Fade(.25, 0, .75, color="#fff")
+    $ flash = Fade(.25, 0, .75, color="#ffffff")
 
 label credits:
     play sound flash
@@ -18,20 +18,20 @@ label credits:
 
     show text "Written & Directed by\n\nCorina Conklin" with dissolve
 
-    $ renpy.pause(4.0)
+    $ renpy.pause(5.0)
 
     show text "Spritework, CGs, and Character Designs \n\nAllison Lee" with dissolve
 
-    $ renpy.pause(4.0)
+    $ renpy.pause(5.0)
 
     show text "Music and Design \n\nManan Chaturvedi" with dissolve
 
-    $ renpy.pause(4.0)
+    $ renpy.pause(5.0)
 
     show text "Backgrounds \n\nKhanhLoan Lambuu" with dissolve
 
-    $ renpy.pause(4.0)
+    $ renpy.pause(5.0)
 
     show text "Sound Effects & Additional Music by\n\nPixabay" with dissolve
 
-    $ renpy.pause(4.0)
+    $ renpy.pause(5.0)
