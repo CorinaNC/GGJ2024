@@ -57,8 +57,8 @@ define build.version = "1.0"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = False
-define config.main_menu_music = 'Serenata.mp3'
-define config.default_music_volume = 1
+define config.main_menu_music = ''
+define config.default_music_volume = 0.7
 define config.default_sfx_volume = 0.7
 define config.default_voice_volume = 0.7
 
@@ -86,8 +86,8 @@ define config.default_voice_volume = 0.7
 
 ## Entering or exiting the game menu.
 
-define config.enter_transition = dissolve
-define config.exit_transition = dissolve
+define config.enter_transition = None
+define config.exit_transition = None
 
 
 ## A transition that is used after a game has been loaded.
@@ -97,7 +97,8 @@ define config.after_load_transition = None
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = dissolve
+define config.end_splash_transition = dissolve
 
 
 ## A variable to set the transition used when the game starts does not exist.

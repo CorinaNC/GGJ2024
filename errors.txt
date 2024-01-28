@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label start is defined twice, at File "game/0intro.rpy", line 4:
-label start:    
-and File "game/1day1_scene1.rpy", line 1:
-﻿label start:
-
+File "game/2day2_scene2.rpy", line 4: expected statement.
+    sound play rollingd
+                       ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sat Jan 27 18:53:24 2024
+Sun Jan 28 03:19:20 2024

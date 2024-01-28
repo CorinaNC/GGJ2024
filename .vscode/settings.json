@@ -107,11 +107,47 @@
                 }
             },
             {
+                "scope": "renpy.meta.color.#ee4b2b",
+                "settings": {
+                    "foreground": "#ee4b2b"
+                }
+            },
+            {
                 "scope": "renpy.meta.color.#f00",
                 "settings": {
                     "foreground": "#f00"
                 }
+            },
+            {
+                "scope": "renpy.meta.color.#00ff00",
+                "settings": {
+                    "foreground": "#00ff00"
+                }
+            },
+            {
+                "scope": "renpy.meta.color.#ffd700",
+                "settings": {
+                    "foreground": "#ffd700"
+                }
+            },
+            {
+                "scope": "renpy.meta.color.#009991",
+                "settings": {
+                    "foreground": "#009991"
+                }
+            },
+            {
+                "scope": "renpy.meta.color.#ff0000",
+                "settings": {
+                    "foreground": "#ff0000"
+                }
             }
         ]
+    },
+    "files.exclude": {
+        "**/*.rpyc": true,
+        "**/*.rpa": true,
+        "**/*.rpymc": true,
+        "**/cache/": true
     }
 }

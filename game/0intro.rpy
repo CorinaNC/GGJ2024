@@ -2,22 +2,24 @@ define povname = ''
 define fifthFaveColor = ''
 
 label start:    
-    centered "Work In Progress presents itself as an experience, both in name and meaning."  
-    centered "The endless timeline that makes up being human holds shelter to an infinite amount of stories."  
-    centered "Our tragedies, our comedies, the mundane and the epic; no matter how they are divided or labeled,"
-    centered "they are all equally unimportant."
-    centered "And yet, this is the one that you decided to select."
-    centered "I’m not a huge fan of prefaces,"
-    centered "So how about we minimize the amount of reading."
-    centered '...'
-    centered '...'
-    centered 'Just kidding!'
-    centered 'This is a visual {b}novel{/b} after all.'
-    centered 'Now tell me a bit about you.'
+
+    centered "> Work In Progress presents itself as an experience, both in name and meaning."  
+    centered "> The endless timeline that makes up being human holds shelter to an infinite amount of stories."  
+    centered "> Our tragedies, our comedies, the mundane and the epic; no matter how they are divided or labeled,"
+    centered "> they are all equally unimportant."
+    centered "> And yet, this is the one that you decided to select."
+    centered "> I’m not a huge fan of prefaces,"
+    centered "> So how about we minimize the amount of reading."
+    centered '> ...'
+    centered '> ...'
+    centered '> Just kidding!'
+    centered '> This is a visual {b}novel{/b} after all.'
+    centered '> Definitions are all that exist for bringing meaning to our consonance.'
+    centered '> Now tell me a bit about you.'
     
     python:
         while povname == '':
-            povname = renpy.input("> What is your name?", screen='inputCenter', allow="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", length=10)
+            povname = renpy.input("> What is your nickname?", screen='inputCenter', allow="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", length=10)
             povname = povname.strip()
         
     centered "> If you had to choose between {b}pineapple on pizza{/b} or a {b}pineapple full of pizza{/b}, which would you choose?"
@@ -35,9 +37,9 @@ label start:
             fifthFaveColor = renpy.input("Type in a letter (ROYGBIV)", screen='inputCenter', allow="ROYGBIVroygbiv", length=1)
             fifthFaveColor = fifthFaveColor.upper()
 
-    centered "..."
-    centered "{cps=10}Alright, that's enough out of you.{/cps}"
-    centered "{cps=10}That's all that we needed, for now.{/cps}"
-    centered "{cps=10}Until we meet {b}again.{/b}{/cps}"
+    centered "> ..."
+    centered "> {cps=20}Alright, that's enough out of you.{/cps}"
+    centered "> {cps=20}That's all that we needed, for now.{/cps}"
+    centered "> {cps=20}Until we meet {b}again.{/b}{/cps}"
     
-    jump scene1
+    jump scene1Intro

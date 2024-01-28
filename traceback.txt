@@ -1,26 +1,49 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 241, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/1day1_scene1.rpy", line 9, in script
-    jump intro
-ScriptError: could not find label 'intro'.
+  File "game/2day2_scene2.rpy", line 138, in script
+    Fangirl "We love you William!  You’re so cute and charming!  We wish we could be you!"
+OSError: Couldn't find file 'audio/womanApplause.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 241, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/1day1_scene1.rpy", line 9, in script
-    jump intro
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'intro'.
+  File "game/2day2_scene2.rpy", line 138, in script
+    Fangirl "We love you William!  You’re so cute and charming!  We wish we could be you!"
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 2557, in execute
+    Say.execute(self)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/character.py", line 1391, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/character.py", line 1042, in do_display
+    display_say(who,
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/character.py", line 738, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 3018, in interact_core
+    renpy.audio.audio.periodic()
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 1205, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 1183, in periodic_thread_main
+    periodic_pass()
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 1125, in periodic_pass
+    c.periodic()
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 534, in periodic
+    topf = load(filename)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 72, in load
+    rv = renpy.loader.load(fn, directory="audio")
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/loader.py", line 672, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/womanApplause.mp3'.
 
 Linux-6.5.9-arch2-1-x86_64-with-glibc2.38 x86_64
 Ren'Py 8.2.0.24012702
 Untitled VN 7.0
-Sat Jan 27 18:54:50 2024
+Sun Jan 28 03:37:26 2024
