@@ -1,22 +1,72 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 323, in script
-    jump expression "_library_main_menu"
-ScriptError: could not find label '_library_main_menu'.
+  File "game/2day2_scene2.rpy", line 340, in script
+    Bill.c "NOW I WON’T HAVE TO GO BACK TO INTRODUCTION TO CREATIVE WRITING!"
+TypeError: Value <renpy.display.transform.ATLTransform object (None, ('renpy/common/00definitions.rpy', 42)) at 0x0000000004c11f70> of type <class 'renpy.display.transform.ATLTransform'> not recognized as a position.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 323, in script
-    jump expression "_library_main_menu"
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 1698, in execute
-    rv = renpy.game.script.lookup(target)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label '_library_main_menu'.
+  File "game/2day2_scene2.rpy", line 340, in script
+    Bill.c "NOW I WON’T HAVE TO GO BACK TO INTRODUCTION TO CREATIVE WRITING!"
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\exports.py", line 1493, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\character.py", line 1391, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\character.py", line 1042, in do_display
+    display_say(who,
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\character.py", line 738, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\core.py", line 2814, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\core.py", line 1352, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\screen.py", line 754, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 1361, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\layout.py", line 913, in render
+    offset = child.place(rv, 0, 0, width, height, surf)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\displayable.py", line 490, in place
+    xpos, ypos = place(width, height, surf.width, surf.height, placement)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\displayable.py", line 61, in place
+    xpos = compute_raw(xpos, width)
+  File "C:\Users\pokeb\OneDrive\Desktop\renpy-8.2.0-sdk\renpy\display\core.py", line 226, in compute_raw
+    raise TypeError("Value {} of type {} not recognized as a position.".format(value, type(value)))
+TypeError: Value <renpy.display.transform.ATLTransform object (None, ('renpy/common/00definitions.rpy', 42)) at 0x0000000004c11f70> of type <class 'renpy.display.transform.ATLTransform'> not recognized as a position.
 
-Linux-6.5.9-arch2-1-x86_64-with-glibc2.38 x86_64
+Windows-10-10.0.22621 AMD64
 Ren'Py 8.2.0.24012702
 Work in Progress 7.0
-Sun Jan 28 13:16:11 2024
+Sun Jan 28 14:33:37 2024

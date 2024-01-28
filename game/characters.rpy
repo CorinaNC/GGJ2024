@@ -7,7 +7,7 @@ init python:
             self.name = name
             self.affection = affection
             
-define n = Char(Character(None, what_italic=True), [povname])
+define n = Char(Character(" ", what_italic=True), [povname])
 define Me = Char(Character("Me", color="#00fff2"), "Cam")
 define Student = Char(Character("Melonie", color="#e41b97"), "Melonie", 0)
 define Bill = Char(Character("William 'Bill' Ceriph", color="ffc000"), "Bill", 0)
