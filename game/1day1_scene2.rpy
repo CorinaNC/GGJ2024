@@ -21,9 +21,6 @@ label scene1_2:
     hide Eve 
     with dissolve
 
-    show Cam neutral
-    with dissolve
-
     n.c "I suppose I haven’t made a proper introduction; but are those really needed nowadays?"  
     
     n.c "I guess it’s common courtesy but I hadn’t the opportunity to do something like this before now."
@@ -45,9 +42,6 @@ label scene1_2:
     n.c "I guess if someone asked for a fun fact, god forbid, I would say that I’m double jointed."
 
     n.c "But a lot of people are so it’s not particularly intriguing."
-
-    hide Cam
-    with dissolve
 
     play sound footsteps
 

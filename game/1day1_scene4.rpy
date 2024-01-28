@@ -1,7 +1,8 @@
 label scene1_4:
 
     scene outdoors
-        
+    with dissolve
+    play music t_eve fadein 2 fadeout 2
     n.c "A fresh breeze hit the back of my shirt, exiting out of the discussion hall."
     
     n.c "Myself and Eve only shared the game design class together, as our major requirements did not intercept."

@@ -10,6 +10,8 @@ label scene2_3:
     show Eve frown
     with dissolve
     pause(.5)
+
+    play music t_eve fadein 2 fadeout 2
     
     n.c "My roommate's eyes averted from her phone, peered at me, then twitched back."
     

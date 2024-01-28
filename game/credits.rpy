@@ -3,8 +3,6 @@ label credits:
     centered "> {cps=15}{color=#FF0000}And that's the end of the demo.{/color}{/cps}"
     centered "> {cps=15}{color=#FF0000}Thank you for reading.{/color}{/cps}"
     centered "> {cps=15}{color=#FF0000}Made for Global Game Jam 2024.{/color}{/cps}"
-    
-    $ renpy.pause(2.0)
 
     show text "{cps=15}> Credits{/cps}" with dissolve
 
