@@ -57,8 +57,8 @@ define build.version = "1.0"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = False
-define config.main_menu_music = 'illurock.opus'
-define config.default_music_volume = 0.7
+define config.main_menu_music = 'Serenata.mp3'
+define config.default_music_volume = 1
 define config.default_sfx_volume = 0.7
 define config.default_voice_volume = 0.7
 

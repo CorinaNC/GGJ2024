@@ -2,8 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 43: invalid syntax
-        povname = povname[0].upper() +
+The label start is defined twice, at File "game/0intro.rpy", line 4:
+label start:    
+and File "game/1day1_scene1.rpy", line 1:
+﻿label start:
 
-Ren'Py Version: Ren'Py 8.1.3.23091805
-Sat Jan 27 06:36:56 2024
+
+Ren'Py Version: Ren'Py 8.2.0.24012702
+Sat Jan 27 18:53:24 2024
