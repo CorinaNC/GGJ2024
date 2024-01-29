@@ -1,49 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/2day2_scene2.rpy", line 138, in script
-    Fangirl "We love you William!  You’re so cute and charming!  We wish we could be you!"
-OSError: Couldn't find file 'audio/womanApplause.mp3'.
+  File "game/0intro.rpy", line 7, in script
+    with flash
+Exception: Color string 'fffff' must be 3, 4, 6, or 8 hex digits long.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/2day2_scene2.rpy", line 138, in script
-    Fangirl "We love you William!  You’re so cute and charming!  We wish we could be you!"
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 2557, in execute
-    Say.execute(self)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/character.py", line 1391, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/character.py", line 1042, in do_display
-    display_say(who,
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/character.py", line 738, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "game/0intro.rpy", line 7, in script
+    with flash
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/ast.py", line 1363, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/exports.py", line 1781, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 1548, in do_with
+    return self.interact(trans_pause=True,
   File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2165, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 3018, in interact_core
-    renpy.audio.audio.periodic()
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 1205, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 1183, in periodic_thread_main
-    periodic_pass()
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 1125, in periodic_pass
-    c.periodic()
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 534, in periodic
-    topf = load(filename)
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/audio/audio.py", line 72, in load
-    rv = renpy.loader.load(fn, directory="audio")
-  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/womanApplause.mp3'.
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2604, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/core.py", line 2518, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/transition.py", line 243, in Fade
+    widget = renpy.display.image.Solid(color)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/display/imagelike.py", line 51, in __init__
+    self.color = renpy.easy.color(color)
+  File "/home/corinac/Downloads/renpy-8.2.0-sdk/renpy/color.py", line 159, in __new__
+    raise Exception("Color string {!r} must be 3, 4, 6, or 8 hex digits long.".format(c))
+Exception: Color string 'fffff' must be 3, 4, 6, or 8 hex digits long.
 
 Linux-6.5.9-arch2-1-x86_64-with-glibc2.38 x86_64
 Ren'Py 8.2.0.24012702
-Untitled VN 7.0
-Sun Jan 28 03:37:26 2024
+Work in Progress 7.0
+Sun Jan 28 15:45:11 2024

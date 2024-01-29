@@ -2,6 +2,10 @@ define povname = ''
 define fifthFaveColor = ''
 
 label start:    
+    play sound flash
+    scene black
+    with flash
+    play music ambience
 
     centered "> Work In Progress presents itself as an experience, both in name and meaning."  
     centered "> The endless timeline that makes up being human holds shelter to an infinite amount of stories."  

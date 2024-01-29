@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/2day2_scene2.rpy", line 4: expected statement.
-    sound play rollingd
-                       ^
+File "game/credits.rpy", line 2: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        $ flash = Fade(.25, 0, .75, color="#ff0000"09")
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sun Jan 28 03:19:20 2024
+Sun Jan 28 15:44:45 2024

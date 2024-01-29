@@ -31,6 +31,7 @@ style button:
 style button_text is gui_text:
     properties gui.text_properties("button")
     yalign 0.5
+    idle_color '#FFFFFF'
 
 
 style label_text is gui_text:
@@ -136,17 +137,17 @@ style window:
 style namebox:
     xpos gui.name_xpos
     xanchor gui.name_xalign
-    xsize gui.namebox_width
+    xsize 807
     ypos gui.name_ypos
-    ysize gui.namebox_height
+    ysize 36
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
     properties gui.text_properties("name", accent=True)
-    xalign gui.name_xalign
-    yalign 0.5
+    xalign 0.5
+    yalign 0.4
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -254,7 +255,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.5
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -292,29 +293,27 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
-screen navigation():
-
+screen navigation2():
     vbox:
-        style_prefix "navigation"
-
-        xpos gui.navigation_xpos
-        yalign 0.5
+        style_prefix "navigation2"
 
         spacing gui.navigation_spacing
 
         if main_menu:
-
-            textbutton _("Start") action Start()
+            xoffset 60
+            yalign 0.5
+            textbutton _("New Game") action Start()
 
         else:
-
+            xoffset 60
+            yalign 0.5
             textbutton _("History") action ShowMenu("history")
 
             textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load Game") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -324,12 +323,55 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        #textbutton _("About") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+      #  if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+        #    textbutton _("Help") action ShowMenu("help")
+
+        if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and Web.
+            textbutton _("Quit") action Quit(confirm=not main_menu)
+
+screen navigation():
+
+    vbox:
+        style_prefix "navigation"
+
+        spacing gui.navigation_spacing
+
+        if main_menu:
+            xalign 0.5
+            yalign 0.5
+            textbutton _("New Game") action Start()
+
+        else:
+            xoffset 60
+            yalign 0.5
+            textbutton _("History") action ShowMenu("history")
+
+            textbutton _("Save") action ShowMenu("save")
+
+        textbutton _("Load Game") action ShowMenu("load")
+
+        textbutton _("Options") action ShowMenu("preferences")
+
+        if _in_replay:
+
+            textbutton _("End Replay") action EndReplay(confirm=True)
+
+        elif not main_menu:
+
+            textbutton _("Main Menu") action MainMenu()
+
+        #textbutton _("About") action ShowMenu("about")
+
+      #  if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+        #    textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -343,10 +385,11 @@ style navigation_button_text is gui_button_text
 style navigation_button:
     size_group "navigation"
     properties gui.button_properties("navigation_button")
+    
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
-
+    xalign 0.5
 
 ## Main Menu screen ############################################################
 ##
@@ -355,7 +398,7 @@ style navigation_button_text:
 ## http://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
-
+   
     ## This ensures that any other menu screen is replaced.
     tag menu
 
@@ -377,8 +420,6 @@ screen main_menu():
             text "[config.name!t]":
                 style "main_menu_title"
 
-            text _("Ren'Py 7+ Edition"):
-                style "main_menu_version"
 
 
 style main_menu_frame is empty
@@ -391,7 +432,7 @@ style main_menu_frame:
     xsize 280
     yfill True
 
-    background "gui/overlay/main_menu.png"
+#background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -424,7 +465,7 @@ screen game_menu(title, scroll=None):
     style_prefix "game_menu"
 
     if main_menu:
-        add gui.main_menu_background
+        add gui.game_menu_background
     else:
         add gui.game_menu_background
 
@@ -472,11 +513,11 @@ screen game_menu(title, scroll=None):
 
                     transclude
 
-    use navigation
+    use navigation2
 
     textbutton _("Return"):
         style "return_button"
-
+        xoffset 50
         action Return()
 
     label title

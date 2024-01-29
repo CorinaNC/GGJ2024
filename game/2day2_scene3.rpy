@@ -1,4 +1,4 @@
-
+$ flash = Fade(0.5, 0, 0.5, color="#FFFFFF")
 
 label scene2_3:
     scene dormRoom
@@ -10,6 +10,8 @@ label scene2_3:
     show Eve frown
     with dissolve
     pause(.5)
+
+    play music t_eve fadein 2 fadeout 2
     
     n.c "My roommate's eyes averted from her phone, peered at me, then twitched back."
     
@@ -148,6 +150,8 @@ label scene2_3:
     Me.c "..?"
 
     show Eve confused
+
+    stop music fadeout 4
 
     Eve.c "Uh, what's your actual name?"
 
