@@ -107,6 +107,14 @@ image Prof smile:
     ypos 0.15
 
 
+# cg
+
+image cgProf:
+    "images/bg/CG.png"
+    zoom 0.8
+    ypos 1.1
+    
+
 # blue people
 
 image Student neutral:
@@ -117,6 +125,24 @@ image Student neutral:
 
 # backgrounds defined here
 
+image outdoors:
+    "images/bg/outdoors.jpg"
+    zoom 0.7
+
+image classroom:
+    "images/bg/classroom.png"
+    zoom 0.8
+    ypos 1.1
+
+image dormRoom:
+    "images/bg/Dorm.png"
+    zoom 0.8
+    ypos 1.1
+
+image hallway:
+    "images/bg/hallway.png"
+    zoom 0.8
+    ypos 1.1
 # assets defined here
 
 image mcfc:
@@ -124,5 +150,5 @@ image mcfc:
 
 # choice variables defined here
 
-define realName = '{b}{color=#FFD700}Cam{/color}{/b}'
+define realName = '{color=#FFD700}Cam{/color}'
 $ pineapple = None

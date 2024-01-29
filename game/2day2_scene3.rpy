@@ -1,6 +1,8 @@
 $ flash = Fade(0.5, 0, 0.5, color="#FFFFFF")
 
 label scene2_3:
+
+    stop music
     scene dormRoom
 
     n.c "I walked back into the dorm room."
@@ -153,7 +155,11 @@ label scene2_3:
 
     stop music fadeout 4
 
+    play music ambience
+
     Eve.c "Uh, what's your actual name?"
+
+    pause(2)
 
     n.c "Was she serious?"
 
@@ -163,7 +169,9 @@ label scene2_3:
 
     Eve.c "No, I'm asking, like, for real."
 
-    Eve.c "{cps=15}I.. it's.. It's {cps=3}[realName]...{/cps} right?{/cps}"
+    Eve.c "{cps=15}I.. it's.. It's...{/cps}"
+
+    Eve.c "{cps=3}[realName]...{/cps} right?"
 
     n.c "..."
 
@@ -178,5 +186,8 @@ label scene2_3:
     n.c "It's.. it's [realName], she said it's [realName]?"
 
     n.c "{cps=15}Then.. then who's {cps=3}{color=#EE4B2B}{b}[povname]{/b}{/color}{/cps}?{/cps}"
+
+    hide Eve
+    with dissolve
 
     jump credits

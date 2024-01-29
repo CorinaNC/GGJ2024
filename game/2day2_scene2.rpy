@@ -1,7 +1,9 @@
 define Fangirl = Character(name="Fangirl")
 
 label scene2_2:
-
+    
+    stop music
+    
     scene classroom
 
     n.c "But as soon as I sent the message.."
@@ -77,10 +79,8 @@ label scene2_2:
 
     Bill.c "WHERE IS THE RULER OF THIS LAND?"
 
-    Bill.c "THE MONARCH OF THE CLASSROOM?"
-
-    Me.c "..."
-
+    Bill.c "THE MONARCH OF THE CLASSROOM?" 
+    
     n.c "Nobody piped up or paid this ‘Bill’ any mind."
 
     show Bill neutral
@@ -170,6 +170,8 @@ label scene2_2:
 
     show Prof smile
     with moveinright
+
+    play music t_prof
     
     Prof.c "Guess who’s back!"
 
@@ -358,16 +360,8 @@ label scene2_2:
     
     Prof.c "Well, after that conundrum, how about we get started with class!"
 
-    Prof.c "I hope that you got the rubric for the project you will all be doing for the next semester."
-
-    Prof.c "You are allowed to work with partners, and actually encouraged to!"
-
-    n.c "I pulled up the assignment rubric on my phone, the course page only had one module on it."
-
     hide Prof
     with dissolve
-
-    #show rubric of project image
 
     n.c "..This looked like it was going to be fun…"
 
@@ -375,7 +369,9 @@ label scene2_2:
     
     n.c "His lecture style was inconsistent but his inflection and phrasing was able to engage me enough where I got the general idea."
 
-    n.c "Eventually the class period came to an end."
+    n.c "He went over more details for the semester project that our class was based around, until letting us loose to do our own thing."
+
+    n.c "Eventually, the class period came to an end."
     
     n.c "I didn’t have any other classes that day and I didn’t feel like opting into an unneeded social gathering."
     

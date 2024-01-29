@@ -89,5 +89,8 @@ label scene1_4:
     n.c "The first day came and went, as there was nothing to write home about regarding the rest of the day."
     
     n.c "I got more of a sense of my schedule and waited for the next day to arrive."
-
+    
+    
+    stop music fadeout 1
+    
     jump scene2Intro

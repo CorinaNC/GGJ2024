@@ -51,8 +51,6 @@ label scene1_3:
 
     n.c "In the midst of our conversation, a loud crash could be heard originating from the doorway of the classroom."
 
-    n.c "Noticeably, there were more students occupying the seats than from before."
-
     show Eve confused
     with dissolve
 
@@ -63,14 +61,18 @@ label scene1_3:
     # show prof muskerburg cg or sprite
 
     hide Eve
+    with dissolve
     
-    show Prof neutral
+    scene cgProf
+
+    play music t_prof fadein 1 fadeout 2
 
     Prof.c "...ACK!!!"
 
     Me.c "...what the hell?"
 
     show Prof manic
+    with dissolve
 
     Prof.c "Don’t mind me, fair students!"
     
@@ -127,8 +129,12 @@ label scene1_3:
     Eve.c "Hey, my cat ears make me even more of a reliable source for deciding the quality of crappy bootlegs!"
 
     hide Eve
+
+    show classroom
+    with dissolve
     
     show Prof neutral
+    with moveinbottom
 
     play sound shuffling
 

@@ -2,10 +2,10 @@
     scene black
     with Pause(1)
 
-    show mcfc at truecenter with dissolve
+    show text "For Global Game Jam 2024" at truecenter with dissolve
     with Pause(2)
 
-    hide mcfc with dissolve
+    hide text with dissolve
     with Pause(2)
     
     return
@@ -22,7 +22,6 @@ label scene1_1:
     play sound phoneVibrate
 
     n.c "Bzzzt.. Bzzt."
-    with vpunch
 
     n.c "There was an annoying ringing in my ear."
 

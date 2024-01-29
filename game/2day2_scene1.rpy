@@ -7,6 +7,8 @@ label scene2Intro:
 
 label scene2_1:
 
+    stop music
+
     n.c "..."
 
     n.c "..."
@@ -18,12 +20,17 @@ label scene2_1:
     scene dormRoom
 
     n.c "Eve isn’t here.."
-
-    # buzz sfx
+    
+    play sound phoneVibrate
+    
+    n.c "Bzzt Bzzt.."
 
     n.c "Class is going to start in 30 minutes.  I should probably get ready."
 
     # pause
+    pause(1)
+
+    play music t_cam fadein 2 fadeout 2
 
     n.c "..Oh right."
 
@@ -87,8 +94,8 @@ label scene2_1:
 
     n.c "I bit the bullet and pulled out my phone to ask where she was."
 
-    Me.c "Where are you?"
+    n.c "..."
 
-    Me.c "class is about to start soon, and I can’t handle the professor alone, lol."
+    play sound msgSent
 
     jump scene2_2

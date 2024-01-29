@@ -3,7 +3,7 @@ init:
 
 label credits:
     play sound flash
-    play music ambience
+    
     with fade
     scene black
     with flash
@@ -16,7 +16,7 @@ label credits:
 
     $ renpy.pause(2.0)
 
-    show text "Written & Directed by\n\nCorina Conklin" with dissolve
+    show text "Written, Programmed, & Directed by\n\nCorina Conklin" with dissolve
 
     $ renpy.pause(5.0)
 
@@ -24,7 +24,7 @@ label credits:
 
     $ renpy.pause(5.0)
 
-    show text "Music and Design \n\nManan Chaturvedi" with dissolve
+    show text "Eve, Bill, and Cam's Theme \n\nManan Chaturvedi" with dissolve
 
     $ renpy.pause(5.0)
 
